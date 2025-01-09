@@ -1,0 +1,82 @@
+<body class="d-flex flex-column vh-100"> 
+    <header>
+        <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand text-white">
+          <img src="/img/logoDG.png" alt="DG" width="80px">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          
+          
+          <ul class="navbar-nav flex-row justify-content-center justify-content-lg-end w-100 fixed-top">
+            <li class="nav-item">
+              <a class="nav-link d-lg-none text-white" href="http://localhost:3000">Home</a>
+              <a class="nav-link d-none d-lg-block" href="http://localhost:3000"><i class="bi bi-house-door-fill text-white"></i></a>
+            </li>
+            <li class="nav-item">
+              <button type="button" id="botaoDesktop" class="nav-link d-lg-none text-white bg-none border-0 ms-2">Carrinho</button>
+              <button type="button" id="botaoAplicativo" class=" nav-link d-none d-lg-block"><i class="bi bi-list text-white"></i></button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none text-white ms-2" href="http://localhost:3000/sobre">Sobre</a>
+              <a class="nav-link d-none d-lg-block" href="http://localhost:3000/sobre"><i class="bi bi-info-circle text-white"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none text-white ms-2" href="http://localhost:3000/user">Perfil</a>
+              <a class="nav-link d-none d-lg-block" href="http://localhost:3000/user"><i class="bi bi-person text-white"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <section class="container mt-3 mb-5 d-flex">
+        <img src="/img/Design sem nome (1).png" alt="video game" class="m-3" width="300px">
+        <div class="divAcesso text-center">
+          <h1>A nova era de jogos chegou!! </h1>
+            <p class="text-justify">Temos jogos novos e inovadores. DaviGames veio para inovar o mercado dos jogos.</p>
+            <p class="text-justify">Vivemos numa época em que os jogos novos chegam com preços muito altos. 
+                Com o objetivo de ir contra os preços altos, trouxemos um catálogo rico
+                 em diversidades de jogos em categorias como: FUTEBOL, RPG, MODO HISTÓRIA, ANIME, FPS E LUTA.</p>
+            <button type="button" class="btn btn-danger mt-3" id="acessarCatalogo">Acessar catálogo</button>
+        </div>
+      </section>
+    <div id="carrinho" class="bg-custom border border-3 border-custom mt-3">
+      <h2 class="text-center">Carrinho de Compras</h2>
+      <button type="button" onclick="fecharCarrinho()" class="position-absolute top-0 end-0 translate-middle-x border border-0 bg-transparent mt-2 text-center">
+        <i class="bi bi-x-lg bg-none text-danger"></i>
+      </button>
+      <ul id="itens-carrinho">
+          <!-- Os itens adicionados aparecerão aqui -->
+      </ul>
+      <div id="itens-pagamentos" class="position-absolute bottom-0 start-0 m-3 btn-custom">
+          Preço total: 0R$
+      </div>
+      <div class="payment d-block position-absolute bottom-0 end-0 m-3">
+        <button type="button" class=" btn btn-custom">
+          <a href="http://localhost:3000/payments" class=" link-underline link-underline-opacity-0 text-white">Ir para o pagamento</a>
+        </button>
+      </div>
+    </div>
+  <main class="itens container-fluid d-none position-relative">
+    <nav class="navbar navbar-expand-lg mt-3">
+        <ul class="nav-item d-flex justify-content-center w-100">
+            <li class="li-main nav-link m-3">FPS</li>
+            <li class="li-main nav-link m-3">FUTEBOL</li>
+            <li class="li-main nav-link m-3">MODO HISTÓRIA</li>
+            <li class="li-main nav-link m-3">LUTA</li>
+            <li class="li-main nav-link m-3">ANIME</li>
+        </ul>
+    </nav>
+  </main>
+  <footer class="text-center p-10 pe-10 mt-100 justify-self-end ">
+    <p>&copy; 2024 DaviGames. Todos os direitos reservados.</p>
+  </footer>
+
+  <div class="boasVindas"></div>
+
+<script src="/script.js"></script>
+</body>

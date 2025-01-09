@@ -1,0 +1,28 @@
+<body class="d-flex justify-content-center align-items-center vh-100 w-100">    
+    <form class="form container-lg d-flex bg-transparent" style="width: 80%; height: 80%;" type="submit">
+    <div class="divEsquerda-from w-50 d-flex flex-column align-items-center mt-5">
+        <h2 class="text-center">Não possui conta?</h2>
+        <p class="text-center mt-3">Para criar uma conta basta clicar em cadastrar!</p>
+        <button class="btn btn-danger mt-3" id="buttonCad" type="button">Cadastro</button>
+    </div>
+    <div class="divDireita-form m-50px w-50">
+        <h2>Login da Conta</h2>
+        <div class="mb-3 mt-3">
+        <label for="email" class="form-label mt-3">Email</label>
+        <input type="email" class="form-control border-3 border-black" id="email">
+        <div id="emailHelp" class="form-text text-white">Nunca passaremos seu e-mail para terceiros.</div>
+        </div>
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="senha">
+        </div>
+        <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="check">
+        <label class="form-check-label" for="check">Deseja salvar?</label>
+        </div>
+        <button type="submit" class="btn btn-danger" id="enviarLogin">Entrar</button>
+        <button type="button" class="limpar btn btn-danger">Limpar</button>
+    </div>
+    </form>
+    <script src="/login.js"></script>    
+</body>

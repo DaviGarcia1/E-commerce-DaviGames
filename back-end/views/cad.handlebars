@@ -1,0 +1,44 @@
+<body class="d-flex justify-content-center align-items-center vh-100 w-100">    
+    <form action="/add" method="post" class="container-lg d-flex bg-transparent mt-3" style="width: 100%; height: 100%;">
+      <div class="divEsquerda-from w-50 d-flex flex-column align-items-center mt-5">
+        <h2 class="text-center mt-5">Seja Bem vindo novamente!</h2>
+        <p class="text-center mt-3">Para se conectar com a gente de novo é só logar!</p>
+        <button class="btn btn-danger mt-3" id="buttonLogin" type="button">Login</button>
+      </div>
+      <div class="divDireita-form m-50px w-50">
+        <h2>Criação da conta</h2>
+        <div class="mb-3 mt-3">
+          <label for="nome" class="form-label mt-3">Nome</label>
+          <input type="text" class="form-control border-3 border-black" id="nome" name="nome">
+        </div>
+        <div class="mb-3 mt-3">
+        <label for="email" class="form-label mt-3">Email</label>
+        <input type="email" class="form-control border-3 border-black" id="email" name="email">
+        <div id="emailHelp" class="form-text text-white">Nunca passaremos seu e-mail para terceiros.</div>
+        </div>
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="senha" name="senha">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="telefone" class="form-label mt-3">Telefone</label>
+          <input type="number" class="form-control border-3 border-black" id="telefone" name="telefone">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="timeFav" class="form-label mt-3">Time Favorito</label>
+          <input type="text" class="form-control border-3 border-black" id="timeFav" name="timeFav">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="insta" class="form-label mt-3">Instagram</label>
+          <input type="text" class="form-control border-3 border-black" id="insta" name="insta">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="dataNasc" class="form-label mt-3">Data de Nascimento</label>
+          <input type="date" class="form-control border-3 border-black" id="dataNasc" name="dataNascimento">
+        </div>
+        <button type="button" class="limpar btn btn-danger">Limpar</button>
+        <button type="submit" class="btn btn-danger">Cadastrar</button>
+      </div>
+    </form>
+    <script src="/login.js"></script> 
+  </body>

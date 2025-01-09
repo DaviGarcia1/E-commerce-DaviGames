@@ -1,0 +1,26 @@
+<body>
+    <form action="/produtos/adicionar" method="post">
+        <p>Nome:</p>
+        <input type="text" name="nome" id="nomeJogo">
+        <br>
+        <p>Preço:</p>
+        <input type="number" name="preco" id="precoJogo" step="0.01">
+        <br>
+        <p>Imagem:</p>
+        <input type="text" name="imagem" id="imagemJogo">
+        <br>
+        <p>Descrição:</p>
+        <input type="text" name="descricao" id="descriçãoJogo">
+        <br>
+        <p>Categoria:</p>
+        <select name="categoria_id" id="categoriaJogo" required> 
+            <option value="1">Fps</option>
+            <option value="3">Futebol</option>
+            <option value="4">Modo História</option>
+            <option value="5">Luta</option>
+            <option value="6">Anime</option>
+        </select>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>

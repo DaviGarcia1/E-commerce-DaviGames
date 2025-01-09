@@ -1,0 +1,24 @@
+<header>
+        <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="http://localhost:3000/" class="navbar-brand text-white">
+          <img src="/img/logoDG.png" alt="DG" width="80px">
+        </a>
+      </div>
+    </nav>
+    </header>
+<div class="container mt-4">
+      <h3>Escolha a forma de pagamento</h3>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary" onclick="selectPayment('Cartão de Crédito')">Cartão de Crédito</button>
+        <button type="button" class="btn btn-success" onclick="selectPayment('Pix')">Pix</button>
+        <button type="button" class="btn btn-warning" onclick="selectPayment('Boleto')">Boleto</button>
+      </div>
+    
+      <div class="mt-4" id="divPagamento"></div>
+</div>
+<div class="container-fluid">
+  <p>Os pagamentos por enquanto são genéricos apenas para ilustrar.</p>
+  <p>Só apertar em confirmar que os itens são comprados a lista do carrinho atualiza.</p>
+</div>
+<script src="/payments.js"></script>

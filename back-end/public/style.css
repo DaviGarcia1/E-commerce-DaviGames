@@ -1,0 +1,135 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nerko+One&family=Permanent+Marker&display=swap');
+
+
+
+    @keyframes animacao {
+        30% {position: absolute; bottom: 30%;}
+        60% {position: absolute; bottom: 60%;}
+        90% {position: absolute; bottom: 90%;}
+    }
+
+    .bg-custom {
+        background-color: #3b0f14 !important;
+    }
+    .border-custom {
+        border-color: red !important;
+    }
+
+
+    body{
+        background-color: #f2ccc7;
+        font-family: "Permanent Marker", cursive !important;
+        background: linear-gradient(to bottom, rgba(85, 39, 34, 0.8), rgba(36, 15, 13, 0.8)),
+                   url('/img/videogame-2.jpg') no-repeat center center fixed;
+       background-size: cover;
+       color: white !important;
+    }
+   
+    
+    .itens-div button:hover, .nav-links:hover, #logout:hover, .li-main:hover{
+        color: red;
+        
+    }
+
+    .card img {
+        height: 100%; 
+        width: auto;    
+        max-height: 50%; 
+        object-fit: cover;
+        background: none;
+    }
+    #carrinho {
+        display: none;
+        width: 80%;
+        min-height: 50%;
+        max-height: 100%;
+        position:fixed;
+        top: 0;
+        left: 10%;
+        border-radius: 30px;
+        z-index: 100;
+    }
+    .nav-carrinho {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-carrinho button {
+        background-color: #ff54f4;
+        border: none;
+        border-radius: 100px;
+        
+    }
+    #itens-carrinho {
+        display: grid;
+        grid-auto-flow: column; /* Adiciona novos itens em colunas */
+        grid-template-rows: repeat(auto-fill, minmax(30px, 1fr)); /* Define altura mínima e máxima para as linhas */
+        max-height: 100%; /* Altura máxima */
+        overflow-y: auto; /* Adiciona barra de rolagem caso exceda a altura */
+        gap: 10px; /* Espaçamento entre os itens */
+    }
+    .nav-itens .li-main {
+        text-align: center;
+        margin: 0px 120px 0px 50px;
+    }
+    /* Estilização das notificações */
+.notificacao-div {
+    position: fixed;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3b0f14;
+    border: 1px solid red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    opacity: 0;
+    transition: bottom 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.notificacao-div.ativo {
+    bottom: 20px;
+    opacity: 1;
+}
+
+
+.boasVindas {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+
+}
+.boasVindas p {
+    color: #ff4760;
+}
+
+
+/*Customização de classes*/
+.bg-custom {
+    background-color: #3b0f14 !important;
+}
+.btn-custom {
+    background-color: #ff4760 !important;
+    color: #f2ccc7;
+}
+.border-custom {
+    border-color: #3b0f14 !important;
+}
+.text-custom {
+    color: #ff4760 !important;
+}
+.border-custom {
+    border-color: red !important;
+}
+
+.m-50px {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.ms-50px {
+    margin-left: 50%;
+}

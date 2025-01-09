@@ -1,0 +1,45 @@
+<body class="container vh-100">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="http://localhost:3000" class="navbar-brand text-white">
+                <img src="/img/logoDG.png" alt="DG" width="80px">
+            </a>
+        </div>
+    </nav>
+
+<h1 class="text-center">Seu perfil</h1>
+<form class="form row g-3">
+  <div class="col-md-12">
+    <label for="nome" class="form-label">Nome</label>
+    <input type="text" class="input form-control" id="nome" name="nome" readonly>
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="input form-control" id="inputEmail4" readonly>
+  </div>
+  <div class="col-md-6">
+    <label for="senha" class="form-label">Senha</label>
+    <input type="password" class="input form-control" id="senha" readonly>
+  </div>
+  <div class="col-12">
+   <label for="telefone" class="form-label mt-3">Telefone</label>
+    <input type="number" class=" input form-control border-3 border-black" id="telefone" name="telefone" readonly>
+  </div>
+  <div class="col-12">
+    <label for="timeFav" class="form-label mt-3">Time Favorito</label>
+    <input type="text" class=" input form-control border-3 border-black" id="timeFav" name="timeFav" readonly>
+  </div>
+  <div class="col-md-6">
+    <label for="insta" class="form-label mt-3">Instagram</label>
+    <input type="text" class="input form-control border-3 border-black" id="insta" name="insta" readonly>
+  </div>
+  <div class="col-md-4">
+    <label for="dataNasc" class="form-label mt-3">Data de Nascimento</label>
+    <input type="date" class="input form-control border-3 border-black" id="dataNasc" name="dataNascimento" readonly>
+  </div>
+  <div class="divBtn col-12">
+    <button type="button" class="alterBtn btn btn-danger">Alterar</button>
+  </div>
+</form>
+<script src="/user.js"></script>
+</body>
